@@ -1,5 +1,6 @@
 {
   "name": "proxy-server",
+  "author": "Alex Hernandez",
   "version": "1.0.0",
   "private": true,
   "scripts": {

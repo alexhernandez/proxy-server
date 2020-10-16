@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
-const { execPromise } = require('./utils');
-const chalk = require('chalk');
+const util = require('util');
+const execPromise = util.promisify(exec);
 
 const installer = async () => {
   const cmd = 'npm install';
   const pkg = 'PROXY SERVER';
   const msg = {
-    init: chalk.green(`${pkg}: Init`),
-    install: chalk.green(`${pkg}: Installing...`),
-    success: chalk.green(`${pkg}: Install Successful 🔥 `),
-    fail: chalk.red(`${pkg}: Install Failed 💥`),
+    init: `${pkg}: Init`,
+    install: `${pkg}: Installing...`,
+    success: `${pkg}: Install Successful 🔥`,
+    fail: `${pkg}: Install Failed 💥`,
   };
 
   console.log(msg.init, cmd);

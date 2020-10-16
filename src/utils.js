@@ -1,10 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const util = require('util');
 const chalk = require('chalk');
-const { exec, execSync } = require("child_process");
-
-const execPromise = util.promisify(exec);
+const { execSync } = require("child_process");
 
 const checkHostsFile = (host) => {
   const cmd = `grep ${host} /etc/hosts`;

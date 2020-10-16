@@ -7,7 +7,7 @@ const isDev = env === 'development';
 const scheme = 'https';
 const host = 'localhost';
 const domain = 'example.com';
-const port = 80;
+const port = 8080;
 
 const examplePrefix = isProd ? 'www' : 'stage';
 
