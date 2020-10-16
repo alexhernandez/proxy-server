@@ -42,7 +42,6 @@ const checkSSLCert = () => {
 };
 
 module.exports = {
-  execPromise,
   checkHostsFile,
   checkSSLCert,
 };
