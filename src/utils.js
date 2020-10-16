@@ -21,9 +21,9 @@ const checkHostsFile = (host) => {
 const checkSSLCert = () => {
   let credentials;
   let hasSSLCert = true;
-  const sslKey = 'key-localhost.pem';
-  const sslCert = 'cert-localhost.pem';
-  const sslPath = '../ssl';
+  const sslKey = 'server.key';
+  const sslCert = 'server.crt';
+  const sslPath = '../certs';
 
   try {
     credentials = {
